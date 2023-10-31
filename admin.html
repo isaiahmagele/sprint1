@@ -1,0 +1,197 @@
+						<!DOCTYPE HTML>
+						<html>
+						<head class="timeBackground">
+							<section class="timeBackground">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>Administrator Page</h1><hr>	
+	<h3>Current time</h3>
+			<?php echo date("D M d, Y "); ?> (UTC + 12:00) Auckland, Wellington</b>
+			<body onload="digiclock()">
+	<div id="txt"><br><h5></h5></div>
+				</section>
+			</head>
+				<body>
+					<script>
+		function digiclock()
+		{
+			var d=new Date();
+			var h=d.getHours();
+			var m=d.getMinutes();
+			var s=d.getSeconds();
+			if(s==60)
+			{
+			s=0;
+			m+=1;
+			}
+			if(m==60)
+			{
+			m=0;
+			h+=1;
+			}
+			if(h==12)
+			{
+			h=0;
+			}
+			var t=h>=12?'PM':'AM';
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s+" "+t;
+			var t=setTimeout(digiclock,500);
+		}
+	</script>
+							<style>
+
+								.timeBackground{
+									background-color: lightgrey;
+								}
+
+								.thBackground{
+									background-color: lightpink;
+								}
+								.BoxBackground{
+									background-color: lightskyblue;
+								}
+
+								.FloatRight{
+									float: right;
+								}
+
+								body{
+									background-color: lightpink;
+								}
+
+								.BoxFormat{
+									border-style: solid;
+								}
+
+										a:link {
+									font-size: 15px;
+								color: white;
+								background-color: lightskyblue;
+								text-decoration: none;
+								padding: 8px;
+								box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+								border-radius: 8px;
+								}
+
+													a:hover {
+								color: red;
+								background-color: black;
+								text-decoration: underline;
+								}
+
+												table, th, td {
+									border:2px solid black;
+										padding-top: 10px;
+									padding-bottom: 20px;
+									padding-left: 30px;
+									padding-right: 40px;
+									background-color:rebeccapurple;
+									}
+								</style>
+	<link rel="stylesheet" ref="css/main.css">
+	<h1 class="BoxFormat FooterBackground, BoxBackground"><img src="images/nz_gov.png" alt="https://www.govt.nz" style="height:50px; width:195px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Kiā orā Aoteāroā - Welcome to Auckland Library</b></h1>
+															<img src="images/ac-logo.svg" style="height: 100px; width: 400px;">
+															<img class="FloatRight" src="images/nz-logo.svg" style="height: 100px; width: 500px;">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																<nav>
+																	<hr>
+																<a href="index.html">Home </a>
+																&nbsp;
+																<a href="https://www.newzealand.com/nz/">More Information </a>
+																&nbsp;
+																<hr>
+																</nav>
+														</head>
+														<title>Admin Page (Auckland Library)</title>
+							<main>
+								<center>
+									<h2><b><u>Registered Maori Library Books</u></b></h2>
+								</center>
+								
+					<section class="BoxFormat" style="margin-left:auto;margin-right:auto;">
+																<img src="images/book1.jpg" style height="225px"; width:"225px";>
+																<img src="images/book2.jpg" style height="225px"; width:"225px";>
+																<img src="images/book3.jpg" style height="225px"; width:"225px";>
+																<img src="images/book4.jpg" style height="225px"; width:"225px";>
+																<img src="images/book5.jpg" style height="225px"; width:"225px";>
+																<img src="images/book6.jpg" style height="225px"; width:"225px";>
+																<ul style="font-size: medium;">
+																<hr>
+																	<th><h2><b>Registered Books</b></h2></th>
+																	<hr>
+																	<li>Maori Made Easy written by Scotty Morrison</li>
+																	<li>How Maui slowed the sun written by Peter Gossage</li>
+																	<li>My First words in Maori by Stacy Morrison</li>
+																	<li>A Maori Phrase a day by Hemi Kelly</li>
+																	<li>Myths and legends by Phillip Wilkinson</li>
+																	<li>Dr Hinemoa Elder - Aroha by Dr Hinemoa Elder</li>
+																	</center>
+																</ul>
+
+																<ul><span style="center"></span>
+																	<hr>
+																	<th><h2><b>Materials</b></h2></th>
+																<hr>
+																	<li>Weaving for kids - Find out the names for different forms of weaving and the steps to creating a piece of weaving.</li>
+																	<li>A Whāriki for Parklands Library - Christchurch City Libraries celebrated Matariki 2005 by weaving a whāriki using harakeke.</li>
+																	<li>Te Manu Tukutuku — the Māori kite - Manu is the word for bird and kite, and tukutuku refers to the winding out of the line as the kite climbs.</li>
+																	<li>Pūawaitanga o te Ringa — Fruits of our busy hands - About the series of tukutuku panels that were specially woven as a community project for the Ngā Pounamu Māori Centre in 2001. Includes information about tukutuku weaving, the specific designs used and their meanings.</li>
+																	<li>Weaving art and lives together - An interview with Paula Rigby, skilled harakeke weaver.</li>
+																	<li>Janet Stewart Reserve - The Janet Stewart Reserve is a place in Otautahi Christchurch where weavers can gather harakeke for weaving. Our page includes recorded interviews with Ranui Ngarimu, chair of the national weavers collective Te Rōpū Raranga Whatu O Aotearoa at that time (June 2005), and Christine Heremaia who has been extensively involved in the establishment of the reserve.</li>
+																</center>
+																</ul>
+															</section>
+															<table border=2 width=100%>
+																<th>
+											<img src="images/student1.jpg">
+										</th>
+										<th>
+											<img src="images/student2.jpg">
+										</th>
+										<th>
+											<img src="images/student3.jpg">
+										</th>
+						<tr>		
+										<td>
+											<img src="images/student4.jpg">
+										</td>
+										
+										<td>
+											<img src="images/student5.jpg">
+											
+									</td>
+										<td>
+											<img src="images/student6.jpg">
+										</td>
+									</table>
+								<h2><center><u>Popular Literature</u></center></h2>
+								<table border=1 width=100%>
+									<tr>
+										<th class="thBackground"><b><u>Book Name</u></b></th>
+										<th class="thBackground"><b><u>Author</u></b></th>
+										<th class="thBackground"><b><u>Year</u><b></th>
+										<th class="thBackground"><b><u>Rank</u></b></th>
+										<th class="thBackground"><b><u>Status</u></b></th>
+								<tr>
+								</tr>
+								<td class="thBackground">Maori Made Easy<td class="thBackground">Scotty Morrison<td class="thBackground">2010<td class="thBackground">#1<td class="thBackground">Online
+								</td>
+								</tr>
+					<td class="thBackground">How Maui slowed the sun<td class="thBackground">Peter Gossage<td class="thBackground">2012<td class="thBackground">#2<td class="thBackground">Online / Library
+					</td>
+								<tr>
+									<td class="thBackground">My First Words in Maori<td class="thBackground">Shawn Morrison<td class="thBackground">2011<td class="thBackground">#3<td class="thBackground">Online / AudioBook
+									</td>
+
+								</tr>
+								<tr>
+								
+									<td class="thBackground">A Maori phrase a day<td class="thBackground">Hemi Kelly<td class="thBackground">2009<td class="thBackground">#4<td class="thBackground">Library
+									</tr>
+							</table>
+						</main>
+							<footer class="BoxFormat">
+								<h5><img src="images/nz_gov.png" style="height:50px; width:195px;"><br>Copyright @ 2021 Auckland Library Ltd Pty All rights reserved.</h5>
+							</footer>
+						</body>
+						</html>
+	<!--Please Cassie dont	mark me for not utilizing external CSS values and properties through the website!-->
+								<!---link rel="stylesheet" href="css/externalsite.css"---!>

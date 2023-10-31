@@ -1,0 +1,135 @@
+							<!DOCTYPE HTML>
+							<html>
+							<head>
+								<section class="timeBackground">
+								 <h3>Current time</h3><?php echo date("D M d, Y "); ?> (UTC + 12:00) Auckland, Wellington</b>
+		    <body onload="digiclock();">
+		<div id="txt"><br><h5></h5></div>
+							</section>
+		</head>
+							<body>
+								<script>
+
+						function formValidation(){
+													var username = document.frmLogin.txtuser.value;
+													var password = document.frmLogin.txtpassword.value;
+
+													if ((username == "") || (username != "Isaiah"))
+													{
+														window.alert("Please enter the username and password correctly"
+															);
+														return false;
+													}
+
+												if ((password == "") || (password != "abc123"))
+												{
+														window.alert("Provide a valid password or password can not be blank!"
+															);
+														return false;
+													}
+
+														return true;
+													}
+
+									function digiclock()
+		   {
+		     var d=new Date();
+		     var h=d.getHours();
+		     var m=d.getMinutes();
+		     var s=d.getSeconds();
+		     if(s==60)
+		     {
+		       s=0;
+		       m+=1;
+		     }
+		     if(m==60)
+		     {
+		       m=0;
+		       h+=1;
+		     }
+		     if(h==12)
+		     {
+		       h=0;
+		     }
+		     var t=h>=12?'PM':'AM';
+		     document.getElementById('txt').innerHTML=h+":"+m+":"+s+" "+t;
+		     var t=setTimeout(digiclock,500);
+		   }
+
+								</script>
+								<style>
+
+									.timeBackground{
+									background-color: lightgrey;
+								}
+
+									.FloatRight{
+										float: right;
+									}
+
+									body{
+										background-color: powderblue;
+									}
+
+									.BoxFormat{
+										border-style: solid;
+										border-color: black;
+									}
+
+												button {
+																background-color:green;
+																font-size: 14px;
+																padding: 6px;
+																width: 150px;
+																border-radius: 8px;
+																color: white;
+																box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+																transition-duration: 0.4s;
+																margin-left:auto;
+																margin-right:auto;
+										}
+															 #footer {
+						            position: fixed;
+						            padding: 10px 10px 0px 10px;
+						            bottom: 0;
+						            width: 100%;
+						            /* Height of the footer*/ 
+						            height: 40px;
+						            
+						        }
+						    </style>
+							<link rel="stylesheet" ref="css/main.css">
+							<h1 class="BoxFormat FooterBackground"><img src="images/nz_gov.png" alt="https://www.govt.nz" style="height:50px; width:195px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Kiā orā Aoteāroā - Welcome to Auckland Library</b></h1>
+																<img src="images/ac-logo.svg" style="height: 100px; width: 400px;">
+																<img class="FloatRight" src="images/nz-logo.svg" style="height: 100px; width: 500px;"><hr>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													</head>
+		<title class="title">&nbsp;&nbsp;&nbsp;Admin Login Page (Auckland Library)</title>
+								<main>
+									<table class="BoxFormat" style="margin-left:auto;margin-right:auto;">
+										<tr>
+									<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Admin Login</u></h2>
+								<td><form method="post" name="frmLogin" action="admin.html" onsubmit="return(formValidation());"></td>
+									<tr>
+										<td>User name:<input type="text" name="txtuser" size="32" width="50" maxlength="255"></td>
+									</tr>
+									<tr>
+										<td>Password:&nbsp;&nbsp;<input type="password" name="txtpassword" size="32" width="50" maxlength="255"></td>
+									</tr>
+									<tr>
+									<td><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button"><b>Login</b></button></td>
+								</tr>
+								</form>
+
+							</tr>
+						</table>
+								</main>
+							
+								<footer id="footer" class="BoxFormat">
+									<p><center>Copyright 2021 @ Auckland Library Pty Ltd All rights reserved.</p></center>
+								</footer>
+							</body>
+							</html>
+
+								<!--Please Cassie dont	mark me for not utilizing external CSS values and properties through the website!-->
+								<!---link rel="stylesheet" href="css/externalsite.css"---!>
